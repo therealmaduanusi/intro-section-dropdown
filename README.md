@@ -31,7 +31,7 @@ Users should be able to:
 
 ![Design preview for the Intro section with dropdown navigation coding challenge](./design/desktop-preview.jpg)
 
-Alternatively, you can use a tool like [chrome developer tools](https://developer.chrome.com/docs/devtools) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
+Alternatively, you can use a tool like [chrome developer tools](https://developer.chrome.com/docs/devtools) to debug your markup and style file. google chrome dev tool is free, so you don't need to purchase it.
 
 ### Links
 
