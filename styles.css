@@ -191,13 +191,11 @@ main {
     position: absolute;
     top: 0;
     left: 0;
-    bottom: 0;
     width: 100%;
-    height: 100%;
     transition: width 0.22s ease-in-out;
   }
-  .nav-bg-display {
-    background-color: hsla(0, 0%, 41%, 0);
+  .nav-display {
+    width: 0% !important;
   }
   .hamburger > div {
     background-color: var(--heading-color);
@@ -209,15 +207,13 @@ main {
     flex-direction: column;
     align-items: start;
     background-color: #fff;
-    min-height: 100%;
     width: 60%;
     transition: width 0.35s ease-in-out;
   }
-  .nav-display {
-    width: 0% !important;
-  }
+
   .nav-ul {
     margin-top: 4rem;
+    min-height: 100svh;
   }
   .nav-ul-display {
     display: none;
@@ -234,8 +230,8 @@ main {
     row-gap: 10px;
     width: 40%;
     margin: 0 2rem;
-    position: relative;
-    bottom: 50%;
+    position: absolute;
+    bottom: 10%;
     transition: display 4s ease-in-out;
   }
   /* display btn */

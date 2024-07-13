@@ -5,7 +5,9 @@ const navUl = document.querySelector(".nav-ul");
 const btnContainer = document.querySelector(".btn-container");
 const arrowImag1 = document.querySelector(".arrow-img1");
 const arrowImag2 = document.querySelector(".arrow-img2");
-const spanDrops = document.querySelectorAll(".spanDrop");
+const spanDrop1 = document.querySelector(".spanDrop1");
+const spanDrop2 = document.querySelector(".spanDrop2");
+
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("hamburger-x");
@@ -15,26 +17,24 @@ hamburger.addEventListener("click", () => {
   btnContainer.classList.toggle("btn-container-display");
 });
 
-function changeDropDown(spanDrop) {
+function changeDropDown1() {
   if (arrowImag1.src.includes("/images/icon-arrow-up.svg")) {
     arrowImag1.src = "/images/icon-arrow-down.svg";
-    spanDrop.nextElementSibling.style.display = "block";
+    spanDrop1.nextElementSibling.style.display = "block";
   } else {
     arrowImag1.src = "/images/icon-arrow-up.svg";
-    spanDrop.nextElementSibling.style.display = "none";
-  }
-  // second drop down
-  if (arrowImag2.src.includes("/images/icon-arrow-up.svg")) {
-    arrowImag2.src = "/images/icon-arrow-down.svg";
-    spanDrop.nextElementSibling.style.display = "block";
-  } else {
-    arrowImag2.src = "/images/icon-arrow-up.svg";
-    spanDrop.nextElementSibling.style.display = "none";
+    spanDrop1.nextElementSibling.style.display = "none";
   }
 }
-
-spanDrops.forEach((spanDrop) => {
-  spanDrop.addEventListener("click", () => {
-    changeDropDown(spanDrop);
-  });
-}); 
+// second drop down
+function changeDropDown2() {
+  if (arrowImag2.src.includes("/images/icon-arrow-up.svg")) {
+    arrowImag2.src = "/images/icon-arrow-down.svg";
+    spanDrop2.nextElementSibling.style.display = "block";
+  } else {
+    arrowImag2.src = "/images/icon-arrow-up.svg";
+    spanDrop2.nextElementSibling.style.display = "none";
+  }
+}
+spanDrop1.addEventListener("click", changeDropDown1);
+spanDrop2.addEventListener("click", changeDropDown2);
