@@ -19,6 +19,7 @@
 body {
   background-color: var(--bg-color);
   font-family: "Epilogue", sans-serif;
+  min-height: 100vh;
 }
 img {
   display: inline-block;
@@ -213,7 +214,7 @@ main {
 
   .nav-ul {
     margin-top: 4rem;
-    height: 100vh;
+    min-height: 100vh;
   }
   .nav-ul-display {
     display: none;
@@ -231,7 +232,7 @@ main {
     width: 40%;
     margin: 0 2rem;
     position: absolute;
-    bottom: 10%;
+    bottom: 5%;
     transition: display 4s ease-in-out;
   }
   /* display btn */
